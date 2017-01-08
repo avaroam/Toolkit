@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5F89D1EFA9316688D9316E20CDC9C36A8DE616FD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CDC3F23059B5235866073A13C113D90DD52B7728" : 9223372036854775807,
+    "FB3108929EE3C3AB687D4824A772F6FFE2657885" : 9223372036854775807,
+    "5F89D1EFA9316688D9316E20CDC9C36A8DE616FD" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "66B93EC9-CE76-40D5-94A4-B844D7EF2437",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CDC3F23059B5235866073A13C113D90DD52B7728" : "Toolkit\/Sugar\/",
+    "FB3108929EE3C3AB687D4824A772F6FFE2657885" : "Toolkit\/EasyPeasy\/",
+    "5F89D1EFA9316688D9316E20CDC9C36A8DE616FD" : "Toolkit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Toolkit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Toolkit\/Toolkit.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/avaroam\/Toolkit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5F89D1EFA9316688D9316E20CDC9C36A8DE616FD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hyperoslo\/Sugar.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CDC3F23059B5235866073A13C113D90DD52B7728"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nakiostudio\/EasyPeasy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FB3108929EE3C3AB687D4824A772F6FFE2657885"
+    }
+  ]
+}

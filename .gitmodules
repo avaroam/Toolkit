@@ -1,0 +1,6 @@
+[submodule "EasyPeasy"]
+	path = EasyPeasy
+	url = https://github.com/nakiostudio/EasyPeasy.git
+[submodule "Sugar"]
+	path = Sugar
+	url = https://github.com/hyperoslo/Sugar.git
