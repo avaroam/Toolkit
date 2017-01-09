@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-extension Int {
+public extension Int {
     static let single: Int = 1
     static let none: Int = 0
 }
 
-extension CGFloat {
+public extension CGFloat {
     static let opaque: CGFloat = 1
     static let transparent: CGFloat = 0
 }

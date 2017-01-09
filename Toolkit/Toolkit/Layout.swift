@@ -9,25 +9,26 @@
 import Foundation
 import UIKit
 
-precedencegroup AddToPrecedence {
-    associativity: left
-    higherThan: LogicalConjunctionPrecedence
-}
-infix operator << : AddToPrecedence
+infix operator <<-
 
-extension UIView {
-    static func << (superview: UIView, view: UIView) {
-        superview.addSubview(view)
+public extension UIView {
+    
+    @discardableResult public static func <<- (lhs: UIView, rhs: Attribute) -> [NSLayoutConstraint] {
+        return lhs <<- [rhs]
     }
 
-    static func << (superview: UIView, views: [UIView]) {
-        for view in views {
-            superview.addSubview(view)
-        }
+    @discardableResult public static func <<- (lhs: UIView, rhs: [Attribute]) -> [NSLayoutConstraint] {
+        lhs.translatesAutoresizingMaskIntoConstraints = false
+        let constraints = lhs.apply(attributes: rhs)
+        
+        lhs.superview?.layoutIfNeeded()
+        
+        return constraints
     }
+    
 }
 
-typealias Fill = Edges
+public typealias Fill = Edges
 
 public class FillEdge: CompoundAttribute {
     public init(_ edge: ReferenceAttribute, _ length: CGFloat, _ insets: UIEdgeInsets = UIEdgeInsets.zero) {

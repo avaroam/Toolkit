@@ -29,21 +29,45 @@ extension UIFont {
     }
 }
 
-class ViewController: UIViewController {
+class CustomView: UIView {
     
-    let headerLabel = UILabel() >> { x in
-        x.textAlignment = .center
-        x.textColor = .appBlue
-        x.font = .ceraRegular(18)
+    let headerLabel = UILabel()
+    
+    convenience init() {
+        self.init(frame: CGRect.zero)
+        
+        // Header label
+        addSubview(headerLabel)
+        headerLabel <- FillEdge(.top, 80, UIEdgeInsets(top: 20, others: 10))
+        
+        headerLabel.textAlignment = .center
+        headerLabel.textColor = .appBlue
+        headerLabel.font = .ceraRegular(18)
     }
+}
+
+class CustomViewController: ViewController<CustomView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view << headerLabel
-        headerLabel <- FillEdge(.top, 80, UIEdgeInsets(top: 20, others: 10))
-        
+        self.ui.headerLabel.alpha = .opaque
     }
     
+}
+
+class ViewController<ViewType: UIView>: UIViewController {
+    var ui: ViewType {
+        get {
+            return self.view as! ViewType
+        }
+        set {
+            self.view = newValue
+        }
+    }
+    
+    override func loadView() {
+        self.view = ViewType()
+    }
 }
 

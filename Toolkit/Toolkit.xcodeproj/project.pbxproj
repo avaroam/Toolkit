@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B68B72C61E22C7DE00365E6A /* InlineIntialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B72C51E22C7DE00365E6A /* InlineIntialization.swift */; };
 		B6B599321E20367F00340866 /* Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B599301E20367F00340866 /* Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6B5994E1E20383400340866 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B5993A1E20383400340866 /* Attribute.swift */; };
 		B6B5994F1E20383400340866 /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B5993B1E20383400340866 /* CompoundAttribute.swift */; };
@@ -74,7 +73,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B68B72C51E22C7DE00365E6A /* InlineIntialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineIntialization.swift; sourceTree = "<group>"; };
 		B6B5992D1E20367F00340866 /* Toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B599301E20367F00340866 /* Toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toolkit.h; sourceTree = "<group>"; };
 		B6B599311E20367F00340866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,14 +151,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B68B72C41E22C7C800365E6A /* Inline Initialization */ = {
-			isa = PBXGroup;
-			children = (
-				B68B72C51E22C7DE00365E6A /* InlineIntialization.swift */,
-			);
-			name = "Inline Initialization";
-			sourceTree = "<group>";
-		};
 		B6B599231E20367F00340866 = {
 			isa = PBXGroup;
 			children = (
@@ -187,7 +177,6 @@
 				B6B5996B1E2039C800340866 /* Cell Registration */,
 				B6B599681E20399800340866 /* Button */,
 				B6B599651E20397D00340866 /* Color */,
-				B68B72C41E22C7C800365E6A /* Inline Initialization */,
 				B6B599621E20386100340866 /* Layout */,
 				B6B599381E20381800340866 /* Submodules */,
 				B6B599301E20367F00340866 /* Toolkit.h */,
@@ -484,7 +473,6 @@
 				B6B5995F1E20383400340866 /* ReferenceAttribute.swift in Sources */,
 				B6B5995E1E20383400340866 /* Priority.swift in Sources */,
 				B6B5999B1E2040E900340866 /* String+CoreFoundation.swift in Sources */,
-				B68B72C61E22C7DE00365E6A /* InlineIntialization.swift in Sources */,
 				B6B599A91E20425A00340866 /* BasicKeyboardHandler.swift in Sources */,
 				B6B5999F1E2040E900340866 /* String+URLStringConvertible.swift in Sources */,
 				B6B599521E20383400340866 /* DimensionAttribute.swift in Sources */,
@@ -615,6 +603,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Toolkit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = avario.Toolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,6 +625,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Toolkit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = avario.Toolkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

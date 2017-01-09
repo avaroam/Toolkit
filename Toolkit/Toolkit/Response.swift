@@ -10,7 +10,7 @@ import Foundation
 
 typealias Response<T> = (_ success: Bool, _ response: Result<T?, ResponseError>) -> Void
 
-struct ResponseError: Error {
-    var code: String
+public struct ResponseError: Error {
+    var code: Int
     var message: String
 }
