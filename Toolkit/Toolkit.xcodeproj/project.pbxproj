@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B65FC4C71E2550790089470F /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65FC4C61E2550790089470F /* Builder.swift */; };
 		B6B599321E20367F00340866 /* Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B599301E20367F00340866 /* Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6B5994E1E20383400340866 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B5993A1E20383400340866 /* Attribute.swift */; };
 		B6B5994F1E20383400340866 /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B5993B1E20383400340866 /* CompoundAttribute.swift */; };
@@ -68,11 +69,11 @@
 		B6B599BC1E2042AF00340866 /* UIImage+RenderingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B599B61E2042AF00340866 /* UIImage+RenderingMode.swift */; };
 		B6B599BD1E2042AF00340866 /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B599B71E2042AF00340866 /* UIView+AddSubviews.swift */; };
 		B6B599BF1E2042AF00340866 /* UIView+Optimize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B599B91E2042AF00340866 /* UIView+Optimize.swift */; };
-		B6B599C21E20511300340866 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B599C11E20511300340866 /* Response.swift */; };
 		B6B599C41E20536B00340866 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B599C31E20536B00340866 /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B65FC4C61E2550790089470F /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		B6B5992D1E20367F00340866 /* Toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B599301E20367F00340866 /* Toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toolkit.h; sourceTree = "<group>"; };
 		B6B599311E20367F00340866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,7 +137,6 @@
 		B6B599B61E2042AF00340866 /* UIImage+RenderingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+RenderingMode.swift"; path = "../../Sugar/Source/iOS/Extensions/UIImage+RenderingMode.swift"; sourceTree = "<group>"; };
 		B6B599B71E2042AF00340866 /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+AddSubviews.swift"; path = "../../Sugar/Source/iOS/Extensions/UIView+AddSubviews.swift"; sourceTree = "<group>"; };
 		B6B599B91E2042AF00340866 /* UIView+Optimize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Optimize.swift"; path = "../../Sugar/Source/iOS/Extensions/UIView+Optimize.swift"; sourceTree = "<group>"; };
-		B6B599C11E20511300340866 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		B6B599C31E20536B00340866 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +151,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B65FC4C51E254F3C0089470F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B65FC4C61E2550790089470F /* Builder.swift */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
 		B6B599231E20367F00340866 = {
 			isa = PBXGroup;
 			children = (
@@ -170,9 +178,9 @@
 		B6B5992F1E20367F00340866 /* Toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				B65FC4C51E254F3C0089470F /* Builder */,
 				B6B599741E203A8900340866 /* Constants */,
 				B6B599711E203A3900340866 /* Geometry */,
-				B6B599C01E20510100340866 /* Response */,
 				B6B5996E1E203A0C00340866 /* View Properties */,
 				B6B5996B1E2039C800340866 /* Cell Registration */,
 				B6B599681E20399800340866 /* Button */,
@@ -335,14 +343,6 @@
 			path = "../../Sugar/Source/iOS-Exclusive/Keyboard";
 			sourceTree = "<group>";
 		};
-		B6B599C01E20510100340866 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				B6B599C11E20511300340866 /* Response.swift */,
-			);
-			name = Response;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -447,6 +447,7 @@
 				B6B599C41E20536B00340866 /* Example.swift in Sources */,
 				B6B599871E2040D100340866 /* Swizzler.swift in Sources */,
 				B6B599AA1E20425A00340866 /* ConstraintKeyboardHandler.swift in Sources */,
+				B65FC4C71E2550790089470F /* Builder.swift in Sources */,
 				B6B599511E20383400340866 /* Context.swift in Sources */,
 				B6B599591E20383400340866 /* NSLayoutGuide+Easy.swift in Sources */,
 				B6B599971E2040E900340866 /* Array+Queueable.swift in Sources */,
@@ -458,7 +459,6 @@
 				B6B599BC1E2042AF00340866 /* UIImage+RenderingMode.swift in Sources */,
 				B6B599AB1E20425A00340866 /* CustomKeyboardHandler.swift in Sources */,
 				B6B599AD1E20425A00340866 /* KeyboardHandler.swift in Sources */,
-				B6B599C21E20511300340866 /* Response.swift in Sources */,
 				B6B599851E2040D100340866 /* Operator.swift in Sources */,
 				B6B599BF1E2042AF00340866 /* UIView+Optimize.swift in Sources */,
 				B6B5998A1E2040D100340866 /* UITesting.swift in Sources */,

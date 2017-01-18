@@ -11,9 +11,9 @@ import UIKit
 
 var ActionBlockKey: UInt8 = 0
 
-typealias BlockButtonActionBlock = () -> Void
+public typealias BlockButtonActionBlock = () -> Void
 
-class ActionBlockWrapper : NSObject {
+public class ActionBlockWrapper : NSObject {
     var block : BlockButtonActionBlock
     
     init(block: @escaping BlockButtonActionBlock) {
@@ -21,8 +21,8 @@ class ActionBlockWrapper : NSObject {
     }
 }
 
-extension UIButton {
-    func setAction(_ block: @escaping BlockButtonActionBlock) {
+public extension UIButton {
+    public func setAction(_ block: @escaping BlockButtonActionBlock) {
         objc_setAssociatedObject(self, &ActionBlockKey, ActionBlockWrapper(block: block), objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         addTarget(self, #selector(block_handleAction))
     }

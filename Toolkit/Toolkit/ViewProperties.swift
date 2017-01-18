@@ -11,8 +11,12 @@ import UIKit
 
 public extension UIView {
     
-    public convenience init(_ dimension: CGFloat) {
+    public convenience init(dimension: CGFloat) {
         self.init(frame: CGRect(square: dimension))
+    }
+    
+    public convenience init(width: CGFloat, height: CGFloat) {
+        self.init(frame: CGRect(size: CGSize(width, height)))
     }
     
     public convenience init(size: CGSize) {
@@ -24,9 +28,7 @@ public extension UIView {
             return self.frame.origin.x
         }
         set {
-            var frame = self.frame
-            frame.origin.x = newValue
-            self.frame = frame
+            self.frame.origin.x = newValue
         }
     }
     
@@ -35,9 +37,7 @@ public extension UIView {
             return self.frame.origin.y
         }
         set {
-            var frame = self.frame
-            frame.origin.y = newValue
-            self.frame = frame
+            self.frame.origin.y = newValue
         }
     }
     
@@ -46,9 +46,7 @@ public extension UIView {
             return self.frame.size.width
         }
         set {
-            var frame = self.frame
-            frame.size.width = newValue
-            self.frame = frame
+            self.frame.size.width = newValue
         }
     }
     
@@ -57,9 +55,7 @@ public extension UIView {
             return self.frame.size.height
         }
         set {
-            var frame = self.frame
-            frame.size.height = newValue
-            self.frame = frame
+            self.frame.size.height = newValue
         }
     }
     
@@ -68,9 +64,7 @@ public extension UIView {
             return self.frame.size
         }
         set {
-            var frame = self.frame
-            frame.size = newValue
-            self.frame = frame
+            self.frame.size = newValue
         }
     }
     
